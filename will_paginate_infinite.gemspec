@@ -1,6 +1,7 @@
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'version'
+$:.push File.expand_path("../lib", __FILE__)
+
+require 'will_paginate_infinite/version'
+
 Gem::Specification.new do |s|
   s.name        = 'will_paginate_infinite'
   s.version     = '0.1.3'
