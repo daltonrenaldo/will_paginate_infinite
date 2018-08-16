@@ -4,22 +4,22 @@ module WillPaginateInfinite
   # Contains functionality shared by all renderer classes.
   module InfiniteRenderer
 
-    def to_html
-      list_items = pagination.map do |item|
-        case item
-          when Fixnum
-            page_number(item)
-          else
-            send(item)
-        end
-      end.join(@options[:link_separator])
+#     def to_html
+#       list_items = pagination.map do |item|
+#         case item
+#           when Fixnum
+#             page_number(item)
+#           else
+#             send(item)
+#         end
+#       end.join(@options[:link_separator])
 
-      tag("ul", list_items, class: ul_class)
-    end
+#       tag("ul", list_items, class: ul_class)
+#     end
 
-    def container_attributes
-      super.except(*[:link_options])
-    end
+#     def container_attributes
+#       super.except(*[:link_options])
+#     end
 
     protected
 
