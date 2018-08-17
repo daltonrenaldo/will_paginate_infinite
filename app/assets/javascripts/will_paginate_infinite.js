@@ -17,10 +17,11 @@ jQuery(function() {
     if (more_posts_url && $(window).scrollTop() > $(document).height() - $(window).height() - bottom_distance && !will_paginate_infinite_fetching) {
       will_paginate_infinite_fetching = true;
       $('.infinite-pagination').html('<div class="cp-spinner cp-round"></div>');
-      
+
       $.getScript(more_posts_url).done(function () {
         will_paginate_infinite_fetching = false;
       }).fail(function (jqxhr, settings, exception) {
+        $('.infinite-pagination').html('Error!');
         console.log(exception);
       });
     }
