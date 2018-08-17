@@ -8,8 +8,14 @@ module WillPaginateInfinite
 
     def to_html
       @options[:class] = 'infinite-pagination'
-      @options[:next_label] = @options[:label] || 'load more' 
+      @options[:next_label] = @options[:label] || 'load more'
       super
+    end
+
+    private
+
+    def container_attributes
+      @container_attributes ||= super.except([:renderer, :collection, :partial])
     end
   end
 end
