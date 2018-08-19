@@ -4,12 +4,12 @@ require 'will_paginate_infinite/version'
 
 Gem::Specification.new do |s|
   s.name        = 'will_paginate_infinite'
-  s.version     = '0.1.3'
-  s.date        = '2016-07-29'
+  s.version     = '0.0.1'
+  s.date        = '2018-08-16'
   s.summary     = "Will Paginate with infinite scroll"
   s.description = "Will Paginate with infinite scroll"
-  s.authors     = ["Adriano Godoy"]
-  s.email       = 'godoy.ccp@gmail.com'
+  s.authors     = ["Renaldo Pierre-Louis"]
+  s.email       = 'pirelouisd87@gmail.com'
 
   s.files       = `git ls-files -z`.split("\x0")
   s.require_paths = ["lib"]
