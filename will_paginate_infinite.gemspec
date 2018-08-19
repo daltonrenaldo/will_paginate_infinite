@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.rdoc_options = ['--main', 'README.md', '--charset=UTF-8']
   s.extra_rdoc_files = ['README.md']
-  
-  s.add_runtime_dependency "will_paginate", '~> 3.0', '>= 3.0.3'
+
+  s.add_runtime_dependency "will_paginate", '~> 3.1.0'
 end
